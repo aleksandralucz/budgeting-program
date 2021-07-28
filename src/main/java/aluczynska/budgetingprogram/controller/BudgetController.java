@@ -1,24 +1,41 @@
 package aluczynska.budgetingprogram.controller;
 
-import aluczynska.budgetingprogram.entity.Budget;
+import aluczynska.budgetingprogram.model.Budget;
 import aluczynska.budgetingprogram.repository.BudgetRepo;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
+import javax.persistence.Table;
+import java.util.List;
 
+@AllArgsConstructor
 @RestController
+@RequestMapping("/api")
+
 public class BudgetController {
 
+    @Autowired
     private final BudgetRepo repository;
 
-    public BudgetController(BudgetRepo repo) {
-        this.repository = repo;
+
+     @PostMapping("/budget")
+     public Budget addBudget(@RequestBody Budget budget){
+         return repository.save(budget);
+     }
+
+     //ResponseEntity - Z jej pomocą możemy łatwo zdefiniować jaki status HTTP powinien być zwrócony.
+    //pomocnicza metodsa ok
+    @PostMapping("/budget")
+    public ResponseEntity< List<Budget>> findAll(){
+        return ResponseEntity.ok(repository.findAll());
     }
 
-    @GetMapping(value = "/budget/all", produces = "application/json")
-    public Budget getBudget() {
-        return repository.getById(1L);
+
+//    @GetMapping("budget/{id}")
+//    public
 
 
-    }
+
 }

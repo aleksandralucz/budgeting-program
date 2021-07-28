@@ -1,6 +1,8 @@
-package aluczynska.budgetingprogram.entity;
+package aluczynska.budgetingprogram.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.persistence.Entity;
@@ -10,6 +12,8 @@ import javax.persistence.Id;
 
 @Data
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "budget")
 public class Budget {
 
@@ -20,8 +24,5 @@ public class Budget {
     private int budgetAmount;
     private String category;
     private String currency;
-
-    public Budget(){
-    }
 
 }

@@ -1,11 +1,11 @@
-package aluczynska.budgetingprogram.entity;
+package aluczynska.budgetingprogram.model;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class User extends Budget {
     private String userName;
     private String password;
 

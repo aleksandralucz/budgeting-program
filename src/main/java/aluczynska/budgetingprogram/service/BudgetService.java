@@ -1,6 +1,6 @@
 //package aluczynska.budgetingprogram.service;
 //
-//import aluczynska.budgetingprogram.entity.Budget;
+//import aluczynska.budgetingprogram.model.Budget;
 //import aluczynska.budgetingprogram.repository.BudgetRepo;
 //import org.springframework.beans.factory.annotation.Autowired;
 //
