@@ -22,7 +22,8 @@ public class Budget {
     private long id;
 
     private int budgetAmount;
-    private String category;
+
     private String currency;
+    private String category;
 
 }
