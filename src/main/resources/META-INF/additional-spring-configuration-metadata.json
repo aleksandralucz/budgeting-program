@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "string.jpa.propertis.hibernate.dialect",
+      "type": "java.lang.String",
+      "description": "Description for string.jpa.propertis.hibernate.dialect."
+  }
+] }

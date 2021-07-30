@@ -1,9 +1,7 @@
 package aluczynska.budgetingprogram.controller;
 
 import aluczynska.budgetingprogram.model.Budget;
-import aluczynska.budgetingprogram.repository.BudgetRepo;
 import aluczynska.budgetingprogram.service.BudgetService;
-import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

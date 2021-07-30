@@ -16,7 +16,6 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @Table(name = "budget")
 public class Budget {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
