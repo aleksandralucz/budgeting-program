@@ -15,12 +15,12 @@ public class BudgetConfig {
     @Bean
     CommandLineRunner commandLineRunner(BudgetRepository repository) {//creating b ean
         return args -> {
-            Budget budget1 = new Budget(1L,
-                    500,
+            Budget budgetForFood = new Budget(1L,
+                    700,
                     "PLN",
                     "food"
             );
-            Budget budget2 = new Budget(
+            Budget budgetForClothes = new Budget(
                     2L,
                     400,
                     "PLN",
@@ -28,7 +28,7 @@ public class BudgetConfig {
             );
 
             repository.saveAll(
-                    List.of(budget1, budget2)
+                    List.of(budgetForFood, budgetForClothes)
             );
         };
     }
