@@ -1,6 +1,6 @@
 package aluczynska.budgetingprogram.repository;
 
-import aluczynska.budgetingprogram.model.Budget;
+import aluczynska.budgetingprogram.entity.Budget;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

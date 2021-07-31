@@ -1,4 +1,4 @@
-package aluczynska.budgetingprogram.model;
+package aluczynska.budgetingprogram.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,10 +10,11 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Entity
 @Data
+
 @Table(name = "users")
-public class User extends Budget {
+public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     private String email;

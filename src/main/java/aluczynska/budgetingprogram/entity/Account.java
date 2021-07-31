@@ -1,4 +1,4 @@
-//package aluczynska.budgetingprogram.model;
+//package aluczynska.budgetingprogram.entity;
 //
 //import lombok.AllArgsConstructor;
 //import lombok.Data;

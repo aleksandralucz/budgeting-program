@@ -1,7 +1,7 @@
 package aluczynska.budgetingprogram.controller;
 
-import aluczynska.budgetingprogram.model.Budget;
-import aluczynska.budgetingprogram.model.User;
+import aluczynska.budgetingprogram.entity.Budget;
+import aluczynska.budgetingprogram.entity.User;
 import aluczynska.budgetingprogram.service.BudgetService;
 import aluczynska.budgetingprogram.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,14 +12,14 @@ import java.util.List;
 @RestController
 @RequestMapping(path ="/api")
 
-public class BudgetController {
+public class BudgetAppController {
 
 
     private final BudgetService budgetService;
     private final UserService userService;
 
     @Autowired
-    public BudgetController(BudgetService budgetService, UserService userService) {
+    public BudgetAppController(BudgetService budgetService, UserService userService) {
         this.budgetService = budgetService;
         this.userService = userService;
     }
@@ -38,6 +38,8 @@ public class BudgetController {
     @DeleteMapping(path = "(userId}")
     public void deleteUser(@PathVariable("userId")Long userId) {
         userService.deleteUser(userId);
+
+
     }
     @DeleteMapping(path = "(budgetId}")
     public void deleteBudget(@PathVariable("budgetId")Long budgetId) {

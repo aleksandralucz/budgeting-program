@@ -1,5 +1,6 @@
-package aluczynska.budgetingprogram.model;
+package aluczynska.budgetingprogram.entity;
 
+import aluczynska.budgetingprogram.Category;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,12 +18,12 @@ import javax.persistence.Id;
 @Table(name = "budget")
 public class Budget {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     private int budgetAmount;
-
     private String currency;
-    private String category;
+    private Category category;
+
 
 }

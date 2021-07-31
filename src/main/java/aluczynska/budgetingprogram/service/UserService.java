@@ -1,6 +1,6 @@
 package aluczynska.budgetingprogram.service;
 
-import aluczynska.budgetingprogram.model.User;
+import aluczynska.budgetingprogram.entity.User;
 import aluczynska.budgetingprogram.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
