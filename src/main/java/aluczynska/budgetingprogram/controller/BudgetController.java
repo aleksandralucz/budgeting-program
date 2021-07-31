@@ -34,7 +34,14 @@ public class BudgetController {
     public void registerNewUser(@RequestBody User user) {
         userService.addNew(user);
 
-
+    }
+    @DeleteMapping(path = "(userId}")
+    public void deleteUser(@PathVariable("userId")Long userId) {
+        userService.deleteUser(userId);
+    }
+    @DeleteMapping(path = "(budgetId}")
+    public void deleteBudget(@PathVariable("budgetId")Long budgetId) {
+budgetService.deleteBudget(budgetId);
     }
 
 }

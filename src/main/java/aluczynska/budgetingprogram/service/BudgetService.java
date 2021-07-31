@@ -21,4 +21,13 @@ public class BudgetService{
     public List<Budget> getBudget(){
         return  budgetRepository.findAll();//return a list
     }
-}
+
+    public void deleteBudget(Long budgetId) {
+        boolean exists = budgetRepository.existsById(budgetId);
+        if(!exists)
+        {
+            throw new IllegalStateException("budget with id "+ budgetId + "does ot exists");
+        }
+        budgetRepository.deleteById(budgetId);
+    }
+    }
