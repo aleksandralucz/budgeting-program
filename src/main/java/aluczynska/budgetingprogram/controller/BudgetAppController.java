@@ -35,13 +35,13 @@ public class BudgetAppController {
         userService.addNew(user);
 
     }
-    @DeleteMapping(path = "(userId}")
+    @DeleteMapping(path = "{userId}")
     public void deleteUser(@PathVariable("userId")Long userId) {
         userService.deleteUser(userId);
 
 
     }
-    @DeleteMapping(path = "(budgetId}")
+    @DeleteMapping(path = "{budgetId}")
     public void deleteBudget(@PathVariable("budgetId")Long budgetId) {
 budgetService.deleteBudget(budgetId);
     }
