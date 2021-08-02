@@ -1,6 +1,5 @@
 package aluczynska.budgetingprogram.entity;
 
-import aluczynska.budgetingprogram.Category;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -23,6 +22,8 @@ public class Budget {
 
     private int budgetAmount;
     private String currency;
+
+    @Embedded
     private Category category;
 
 

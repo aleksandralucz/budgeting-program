@@ -1,8 +1,8 @@
-package aluczynska.budgetingprogram;
+package aluczynska.budgetingprogram.entity;
 
-import javax.persistence.Column;
+import javax.persistence.Embeddable;
 
-
+@Embeddable
 public enum Category {
     FOOD,
     CLOTHES,

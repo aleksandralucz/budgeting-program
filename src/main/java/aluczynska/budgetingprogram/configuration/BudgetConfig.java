@@ -1,7 +1,7 @@
 package aluczynska.budgetingprogram.configuration;
 
 
-import aluczynska.budgetingprogram.Category;
+import aluczynska.budgetingprogram.entity.Category;
 import aluczynska.budgetingprogram.entity.Budget;
 import aluczynska.budgetingprogram.repository.BudgetRepository;
 import org.springframework.boot.CommandLineRunner;
