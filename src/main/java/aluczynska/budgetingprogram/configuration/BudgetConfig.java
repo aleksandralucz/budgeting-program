@@ -1,7 +1,7 @@
 package aluczynska.budgetingprogram.configuration;
 
 
-import aluczynska.budgetingprogram.entity.Category;
+import aluczynska.category.CategoryType;
 import aluczynska.budgetingprogram.entity.Budget;
 import aluczynska.budgetingprogram.repository.BudgetRepository;
 import org.springframework.boot.CommandLineRunner;
@@ -19,13 +19,13 @@ public class BudgetConfig {
             Budget budget1 = new Budget(1L,
                     700,
                     "PLN",
-                    Category.BEAUTY
+                    CategoryType.BEAUTY
             );
             Budget budget2 = new Budget(
                     2L,
                     400,
                     "PLN",
-                    Category.BILLS
+                    CategoryType.BILLS
             );
 
             repository.saveAll(

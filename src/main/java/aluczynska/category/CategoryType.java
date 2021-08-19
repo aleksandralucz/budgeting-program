@@ -1,9 +1,9 @@
-package aluczynska.budgetingprogram.entity;
+package aluczynska.category;
 
 import javax.persistence.Embeddable;
 
 @Embeddable
-public enum Category {
+public enum CategoryType {
     FOOD,
     CLOTHES,
     FREE_TIME,
