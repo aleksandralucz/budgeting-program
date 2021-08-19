@@ -30,7 +30,7 @@ public class BudgetAppController {
     }
 
 
-    @PostMapping
+    @PostMapping(path ="/budget")
     public void registerNewUser(@RequestBody User user) {
         userService.addNew(user);
 
