@@ -6,18 +6,18 @@ import java.util.stream.Stream;
 
 public enum MonthNames {
 
-    MONTH_JANUARY("month.january"),
-    MONTH_FEBRUARY("month.february"),
-    MONTH_MARCH("month.march"),
-    MONTH_APRIL("month.april"),
-    MONTH_MAY("month.may"),
-    MONTH_JUNE("month.june"),
-    MONTH_JULY("month.july"),
-    MONTH_AUGUST("month.august"),
-    MONTH_SEPTEMBER("month.september"),
-    MONTH_OCTOBER("month.october"),
-    MONTH_NOVEMBER("month.november"),
-    MONTH_DECEMBER("month.december");
+    MONTH_JANUARY("January"),
+    MONTH_FEBRUARY("February"),
+    MONTH_MARCH("March"),
+    MONTH_APRIL("April"),
+    MONTH_MAY("May"),
+    MONTH_JUNE("June"),
+    MONTH_JULY("July"),
+    MONTH_AUGUST("August"),
+    MONTH_SEPTEMBER("September"),
+    MONTH_OCTOBER("October"),
+    MONTH_NOVEMBER("November"),
+    MONTH_DECEMBER("December");
 
     private final String key;
 
